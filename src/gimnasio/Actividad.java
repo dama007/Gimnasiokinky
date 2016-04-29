@@ -64,10 +64,7 @@ public class Actividad {
             return false;
         }
         final Actividad other = (Actividad) obj;
-        if (!Objects.equals(this.nombre, other.nombre)) {
-            return false;
-        }
-        return true;
+        return this.nombre.equalsIgnoreCase(other.getNombre());
     }
     
     
